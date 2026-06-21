@@ -6,11 +6,11 @@ A Light Intensity Monitoring System is an embedded application that senses the s
 Light intensity monitoring has practical importance in numerous real-world systems, including automatic street lighting, indoor lighting automation, greenhouse monitoring, solar panel positioning, camera exposure control, and safety systems that require a minimum ambient light level. By building this system around the PIC18F452 — a widely used 8-bit microcontroller in academic and industrial embedded projects — this project demonstrates core embedded systems concepts such as analog signal acquisition, analog-to-digital conversion (ADC), LCD interfacing, digital output control, and threshold-based decision making.
 The system continuously samples the analog voltage produced by the LDR voltage-divider circuit, converts it into a digital value using the microcontroller's built-in 10-bit ADC module, scales that value into a light intensity percentage, and then uses this percentage to drive three categories of output: a numeric LCD readout, a three-level LED indicator (low / medium / high), and a buzzer alarm that activates when the surroundings become too dark.
 ## 2. Aims and Objectives
-Aims
+## Aims
 •	Design and implement a real-time light intensity monitoring system using the PIC18F452 microcontroller.
 •	Provide both a numeric (LCD) and a visual/audible (LED + buzzer) indication of ambient light level.
 •	Demonstrate practical use of the PIC18F452's ADC module and general-purpose I/O ports.
-Objectives
+## Objectives
 •	Interface an LDR sensor with the PIC18F452 ADC channel (AN0) through a voltage-divider circuit.
 •	Configure and use the internal 10-bit ADC module to digitize the analog light signal.
 •	Convert the raw ADC reading into a meaningful light intensity percentage (0% – 100%).
