@@ -39,9 +39,13 @@ System Block Diagram
 The detailed schematic below shows the complete pin-level connections between the PIC18F452 and all peripheral components, including the LDR voltage-divider input, the crystal oscillator circuit, the LCD data lines, and the LED/buzzer output stage.
 
 <img width="750" height="592" alt="image" src="https://github.com/user-attachments/assets/2b26da0c-140c-4812-ad60-0d7694ff1a30" />
+
 ## Pin Connection Summary
+
 <img width="630" height="327" alt="image" src="https://github.com/user-attachments/assets/3e4401d1-fabc-4f45-872f-050e2a2d7d56" />
+
 ## Component List
+
 <img width="627" height="392" alt="image" src="https://github.com/user-attachments/assets/05cd9245-21cc-490f-9478-41747236a764" />
 
 ## 7. Source Code
@@ -132,6 +136,7 @@ The system operates in a continuous polling loop, executing the following sequen
 6.	Threshold Comparison: The percentage is compared against two thresholds: below 20% is classified as Low (dark), between 20% and 60% as Medium, and above 60% as High (bright).
 7.	Output Actuation: Based on the classification, the corresponding LED is switched on (and the other two switched off), and the buzzer is activated only in the Low (dark) condition to alert the user.
 ## Threshold Logic Summary
+
 <img width="624" height="120" alt="image" src="https://github.com/user-attachments/assets/fbb83e64-016c-4396-be3b-a93924f0d77e" />
 
 ## 11. Conclusion and Future Work
